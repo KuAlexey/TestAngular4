@@ -1,28 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { UserLoginComponent } from './loginPage/login.component';
-import { MapComponent } from './homePage/app-map';
+import { LoginComponent } from './pages/loginPage/login.component';
+import { MapComponent } from './pages/homePage/app-map.component';
 import { FormsModule } from '@angular/forms';
-//import { AppRoutingModule } from './app-routing.module';
 import { AgmCoreModule } from '@agm/core';
-//import {HttpClientModule} from '@angular/common/http';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserLoginComponent,
-    MapComponent
+    LoginComponent,
+    MapComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    //AppRoutingModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyA3jd636bBrRo6a8IZ5LnHtKpjE1aFnmQM'
+      apiKey: 'AIzaSyASO-lw6_AwXm2gjzyXY0nPzPcfOf46rLg'
     }),
-   // HttpClientModule
+    FormsModule,
+    HttpClientModule
   ],
   bootstrap: [AppComponent]
 })

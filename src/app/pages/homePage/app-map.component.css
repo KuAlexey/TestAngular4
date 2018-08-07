@@ -1,0 +1,58 @@
+#containerHomePage{
+  top:10px;
+}
+agm-map  {
+    height: 400px;
+    width: 100%;
+    position: absolute;
+  }
+  * {
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  #pointedPlaces{
+    top: 500px;
+    width: 30%;
+    position: absolute;
+
+  }
+
+  #pointedPlaces li:hover {
+    color: rgba(56, 65, 105, 0.945);
+    cursor: pointer;
+  }
+  #pointedPlaces li:active {
+    color: rgba(72, 81, 121, 0.945);
+    cursor: pointer;
+  }
+  #pointedPlaces li{
+    padding: 0px 5px 0px 5px;
+  }
+  .button{
+    -moz-box-shadow: inset 0px 1px 0px 0px rgb(29, 37, 82);
+    -webkit-box-shadow: inset 0px 1px 0px 0px rgb(29, 37, 82);
+    box-shadow: inset 0px 1px 0px 0px rgb(29, 37, 82);
+    background-color: black;
+    border: 1px solid black;
+    display: inline-block;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 14px;
+    padding: 8px 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  #buttons{
+    top: 430px;
+    position: absolute;
+    right:44%;
+  }
+  #aboutmyself{
+    font-size: 20px;
+    max-width: 66%;
+    top: 500px;
+    position: absolute;
+    left: 32%;
+    }
+

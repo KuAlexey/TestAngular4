@@ -1,0 +1,37 @@
+
+<div class = "container" [hidden]= "submitted" class="form-style-8">
+  <h2>Login your account</h2>
+  <form id = "userForm" #userForm novalidate (ngSubmit) = "onSubmit()">
+   
+    
+    <input type = "text" id="login" class="form-control" placeholder="login" required [value]="newLogin"
+    (input)="newLogin=$event.target.value">
+    <br />
+  
+  <div *ngIf = "invalidLogin" class="danger">
+    <p>Sorry, but valid login is required.</p>
+  </div>
+
+    
+    <input id="password" type = "password" class="form-control" placeholder="password" required [value]="newPassword"
+    (input)="newPassword=$event.target.value">
+    <br />
+  <div *ngIf = "invalidPassword" class="danger">
+    <p>Sorry, but valid password is required.</p>
+  </div>
+  
+
+    <button id = "submit" type="submit">Apply</button>
+   
+</form>
+
+</div> 
+
+ 
+  <div id = "homePage" [hidden] = "!submitted">
+    <app-map></app-map>
+</div> 
+
+
+    
+    

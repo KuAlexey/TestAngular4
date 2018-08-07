@@ -1,0 +1,39 @@
+<div id="containerHomePage">
+  <agm-map 
+    [latitude]="lat"
+    [longitude]="lng"
+    [zoom]="zoom"
+    [disableDefaultUI]="false"
+    [zoomControl]="false"
+    (mapClick)="mapClicked($event)">
+
+  
+  <agm-marker *ngFor="let new_place of newPlaces"
+    [latitude]="new_place.lat"
+    [longitude]="new_place.lng">
+  </agm-marker>
+
+
+  </agm-map>
+
+  <div id = "buttons">
+    <input class = "button" type = "button" (click) = "zoomIn()" value = "+">
+    <input class = "button" type = "button" (click) = "zoomOut()" value = "-">  
+    <input class = "button" type = "button" (click) = "sendData()" value = "Send data">
+  </div>
+
+  <div id = "pointedPlaces"> 
+    <ul>
+      <li  *ngFor="let pointedPlaces of newPoinedPlaces" 
+       (click) = "addMarkerPoinedPlaces(pointedPlaces.lat, pointedPlaces.lng)">
+       {{pointedPlaces.name_place}}
+      </li>
+    </ul>
+  </div>
+
+<div id="aboutmyself">
+  <h2>About the author</h2>
+  <p>Hello, my name is Alexey, I was born and lived all my youth in the city called Bolgrad. When have been the time to choose the University, my choice fell on the technical University, which is located in Poltava, as my relatives live in this city. I entered the faculty of civil engineering. Quite late showed interest in programming languages, in particular to Java and JavaScript, gradually I began to delve more and more into the knowledge of IT, reading various books and practicing programming on my own.</p>
+</div>
+<hr/>
+</div>

@@ -1,7 +1,7 @@
 
 .form-style-8{
     font-family: 'Open Sans Condensed', arial, sans;
-    width: 500px;
+    width: 300px;
     padding: 30px;
     background: #FFFFFF;
     margin: 50px auto;
@@ -35,6 +35,8 @@
     margin-bottom: 10px;
     font: 16px Arial, Helvetica, sans-serif;
     height: 45px;
+    position: absolute;
+   left: 10%;
 }
 .form-style-8 input[type="submit"]{
     -moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
@@ -50,20 +52,17 @@
     padding: 8px 18px;
     text-decoration: none;
     text-transform: uppercase;
+   position: absolute;
+   left: 10%;
 }
 .form-style-8 input[type="button"]:hover, 
 .form-style-8 input[type="submit"]:hover {
     background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
     background-color:#34CACA;
 }
-
-#aboutmyself{
-text-size:20px
-
-}
 #login{
-padding-bot: 10px
+margin-bottom: 10px;
 }
 #submit{
-  padding-top: 3%;
+  margin-top: 3%;
 }
