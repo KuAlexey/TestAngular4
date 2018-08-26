@@ -12,14 +12,15 @@ declare var google: any;
     styleUrls: ['./app-map.component.css']
 })
 export class MapComponent{
-    constructor(private http: HttpClient) { } 
+    constructor(private http: HttpClient) { 
+    } 
     zoom = 16;
     lat = 46.599201;
     lng = 30.800976;
     map = AgmMap;
     newPoinedPlaces = pointedPlaces;
     latLng;
-
+    imageOfPlace: String;
 setZoom(zoom: number){
     this.zoom = zoom;
 }
@@ -36,7 +37,7 @@ zoomOut(){
     this.setZoom(this.getZoom() - 1);
 }
 sendData(){
-   this.http.post('/t/cdcpl-1533590002/post', JSON.stringify(this.newPlaces)).subscribe(
+   this.http.post('https://webhook.site/7ddccaaa-0b50-4a41-97f9-e9be509eeecd', JSON.stringify(this.newPlaces)).subscribe(
        () => {},
        err => console.error(err)
    );
@@ -49,6 +50,9 @@ newPlaces: Marker[] = [
 mapClicked($event: MouseEvent) {
     this.latLng  = {lat: $event.coords.lat, lng: $event.coords.lng};
     this.newPlaces.push(this.latLng);
+}
+showImage(image: String) {
+    this.imageOfPlace = image;
 }
 
 addMarkerPoinedPlaces(latValue, lngValue){

@@ -1,58 +1,117 @@
-#containerHomePage{
-  top:10px;
+
+#title{
+  font-size: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 0px 25px;
+  
 }
 agm-map  {
-    height: 400px;
-    width: 100%;
-    position: absolute;
-  }
-  * {
-    font-family: 'Times New Roman', Times, serif;
-  }
-
-  #pointedPlaces{
-    top: 500px;
-    width: 30%;
-    position: absolute;
-
-  }
-
-  #pointedPlaces li:hover {
-    color: rgba(56, 65, 105, 0.945);
-    cursor: pointer;
-  }
-  #pointedPlaces li:active {
-    color: rgba(72, 81, 121, 0.945);
-    cursor: pointer;
-  }
-  #pointedPlaces li{
-    padding: 0px 5px 0px 5px;
-  }
-  .button{
-    -moz-box-shadow: inset 0px 1px 0px 0px rgb(29, 37, 82);
-    -webkit-box-shadow: inset 0px 1px 0px 0px rgb(29, 37, 82);
-    box-shadow: inset 0px 1px 0px 0px rgb(29, 37, 82);
-    background-color: black;
-    border: 1px solid black;
-    display: inline-block;
-    cursor: pointer;
-    color: #FFFFFF;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 14px;
-    padding: 8px 18px;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-  #buttons{
-    top: 430px;
-    position: absolute;
-    right:44%;
-  }
-  #aboutmyself{
-    font-size: 20px;
-    max-width: 66%;
-    top: 500px;
-    position: absolute;
-    left: 32%;
-    }
+  height: 400px;
+  margin: auto 0;
+  width: 100%;
+  position: relative;
+}
+#pointedPlaces{
+  top: 20px;
+  width: 40%;
+  position: relative;
+} 
+#pointedPlaces li:hover {
+  color: rgba(56, 65, 105, 0.945);
+  cursor: pointer;
+}
+#pointedPlaces li:active {
+  color: rgba(72, 81, 121, 0.945);
+  border: 1px solid rgb(56, 65, 105);
+  cursor: pointer;
+}
+#pointedPlaces li{
+  display: block;
+  padding: 0 15px;
+  margin: 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: left;
+}
+.button{
+  cursor: pointer;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 14px;
+  margin: 10px;
+}
+.button:hover{
+  background-color: #b5c981af;
+  border: 1px solid #b5c981af;
+}
+.button:active{
+  background-color: #9ba38373;
+  border: 1px solid #9ba38373;
+}
+.buttonMapSize{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 385px;
+  right: 70px;
+  background-color: white;
+  border: none;
+}
+#minus{
+  top: 420px;
+}
+#sendData{
+  text-align: center;
+  font-size: 20px;
+  position: relative;
+  background-color: #c5e374;
+  border: 1px solid black;
+  top: 20px;
+  left: 43%;
+  border-radius: 10%;
+  width: 100px;
+  height: 40px;
+  box-shadow:2px 2px 0px rgba(0,0,0,.05);
+}
+#sendData .tooltip{
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 10px;
+}
+#sendData .tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+#sendData:hover .tooltip{
+  visibility: visible;
+  opacity: 1;
+}
+#imageArea{
+  top: 570px;
+  right: 100px;
+  position: absolute;
+}
+#imageArea img{
+  height: 300px;
+  width: 450px;
+}
+  
 

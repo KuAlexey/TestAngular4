@@ -1,3 +1,7 @@
-#title{
-    text-align: center;
+#container{
+    background-image: url(https://cdn.shopify.com/s/files/1/1721/9909/products/half_dotted_waves_wallpaper_1024x1024.jpg?v=1527294047);
+    background-repeat: repeat;
+    border-left-style: 1px solid #8a855f;
+    border-right-style: 1px solid #8a855f;
+    margin: auto 1%; 
 }

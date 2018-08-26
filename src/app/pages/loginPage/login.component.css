@@ -1,7 +1,6 @@
-
-.form-style-8{
+.container{
     font-family: 'Open Sans Condensed', arial, sans;
-    width: 300px;
+    width: 500px;
     padding: 30px;
     background: #FFFFFF;
     margin: 50px auto;
@@ -9,7 +8,7 @@
     -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
     -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
 }
-.form-style-8 h2{
+.container h2{
     background: #4D4D4D;
     text-transform: uppercase;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -17,28 +16,26 @@
     font-size: 18px;
     font-weight: 100;
     padding: 20px;
-    margin: -30px -30px 30px -30px;
+    margin: -30px;
 }
-.form-style-8 input[type="text"],
-.form-style-8 input[type="password"],
-{
+.form-control{
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     outline: none;
     display: block;
-    width: 100%;
-    padding: 7px;
+    width: 80%;
+    padding-left:7px;
     border: none;
     border-bottom: 1px solid #ddd;
     background: transparent;
-    margin-bottom: 10px;
     font: 16px Arial, Helvetica, sans-serif;
-    height: 45px;
-    position: absolute;
-   left: 10%;
+    height: 30px;
 }
-.form-style-8 input[type="submit"]{
+#login{
+margin-top: 10%;
+}
+#submit {
     -moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
     -webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
     box-shadow: inset 0px 1px 0px 0px #45D6D6;
@@ -52,17 +49,23 @@
     padding: 8px 18px;
     text-decoration: none;
     text-transform: uppercase;
-   position: absolute;
-   left: 10%;
 }
-.form-style-8 input[type="button"]:hover, 
-.form-style-8 input[type="submit"]:hover {
+#submit:hover {
     background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
     background-color:#34CACA;
 }
-#login{
-margin-bottom: 10px;
+
+.danger{
+    font: 12px Arial, Helvetica, sans-serif;
+    color: red;
+    text-align: left;
+    border-bottom: 1px red solid;
+    height: 13px;
+    padding-left: 7px;
 }
-#submit{
-  margin-top: 3%;
+#homePage{
+    padding: 0;
+    background: cornsilk content-box; 
+   height: 100%;
+   width: 100%;
 }
